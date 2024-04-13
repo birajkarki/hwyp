@@ -1,0 +1,15 @@
+<!-- res/drawable/edittext_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#CCCCCC" /> <!-- Background color when pressed -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#F0F0F0" /> <!-- Default background color -->
+        </shape>
+    </item>
+</selector>
