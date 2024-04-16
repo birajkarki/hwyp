@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="linear_gradient_start">#CFEBFB</color> <!-- rgba(207, 235, 251, 1) -->
+    <color name="linear_gradient_middle">#96D3ED</color> <!-- rgba(150, 211, 237, 0.88) -->
+    <color name="linear_gradient_middle2">#A9D0F4</color> <!-- rgba(169, 208, 244, 0.82) -->
+    <color name="linear_gradient_end">#6EBDDD</color> <!-- rgba(110, 189, 223, 0.94) -->
+</resources>
