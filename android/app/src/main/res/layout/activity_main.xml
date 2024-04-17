@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/edittext_background"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="10dp" />
 
@@ -73,10 +73,10 @@
                 android:id="@+id/passwordVisibilityToggle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Show"
-                android:textColor="@color/black"
+                android:onClick="togglePasswordVisibility"
                 android:padding="10dp"
-                android:onClick="togglePasswordVisibility"/>
+                android:text="Show"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
