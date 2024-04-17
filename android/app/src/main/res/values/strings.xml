@@ -11,4 +11,12 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login">LOGIN</string>
     <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="error_while_logging_in">error while logging in</string>
+    <string name="login_button">LOGIN</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
 </resources>

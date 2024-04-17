@@ -1,122 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:id="@+id/root_layout"
-
-        android:layout_height="match_parent"
-        android:background="@drawable/gradient_background">
-
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
 
 
     <TextView
-        android:id="@+id/loginTextView"
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logoImageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="151dp"
-        android:text="@string/login"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:id="@+id/loginFormLayout"
+        android:id="@+id/name"
         android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginTextView"
-        android:layout_marginTop="48dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="40dp">
+        android:text="Name"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
 
-        <!-- Email EditText -->
-        <EditText
-            android:id="@+id/emailEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:padding="10dp" />
-
-        <!-- Password EditText -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/passwordEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/edittext_background"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:padding="10dp" />
-
-            <!-- Password visibility toggle -->
-            <!-- Password visibility toggle -->
-            <TextView
-                android:id="@+id/passwordVisibilityToggle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="togglePasswordVisibility"
-                android:padding="10dp"
-                android:text="Show"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:text="LOGIN"
-            android:textColor="@color/white" />
-
-
-        <!-- Forget Password -->
-        <TextView
-            android:id="@+id/forgetPasswordTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:text="Forgot your password?"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/createAccountTextView"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="76dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Create New Account"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:text="Logout"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
 
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/fetchResult"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/fetchProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Profile"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

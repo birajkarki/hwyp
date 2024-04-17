@@ -27,7 +27,9 @@
 
     app.use(bodyParser.json());
 
-   
+    app.get("/", (req, res) => {
+        res.send("Hello, world!");
+    });
     app.post("/signup", async (req, res) => {
         const { name, email, password, passwordConfirm } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);

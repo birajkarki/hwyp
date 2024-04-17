@@ -46,4 +46,10 @@
         //noinspection UseTomlInstead
         implementation("androidx.core:core-splashscreen:1.0.1")
 
+
+        implementation (libs.volley)
+
+//        implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+
+
     }
